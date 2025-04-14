@@ -39,7 +39,7 @@ Benefits:
    ![Architecture Diagram](https://github.com/user-attachments/assets/221c66a2-cad0-4d37-a9ca-83bb2e722460)
 # --------------------------------------------------------------------------
 ## <ins>3. Implementation for the Rideau Canal Skateway Monitoring System using Azure services:</ins>
-## 3.1 IoT Sensor Simulation:
+### 3.1 IoT Sensor Simulation:
 Simulated IoT sensors mimic real-time data generation related to ice conditions and weather factors, sending telemetry data to Azure IoT Hub using a Python script.
 Example JSON payload:
 ```python
@@ -52,8 +52,8 @@ Example JSON payload:
   "timestamp": "2024-11-23T12:00:00Z"
 }
 ```
-## 3.2 Azure IoT Hub Configuration:
+### 3.2 Azure IoT Hub Configuration:
 
-## 3.3 Azure Stream Analytics Job:
+### 3.3 Azure Stream Analytics Job:
 
-## 3.4 o	Azure Blob Storage:
+### 3.4 o	Azure Blob Storage:
