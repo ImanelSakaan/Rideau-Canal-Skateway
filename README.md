@@ -31,9 +31,12 @@ Benefits:
 •	Long-term insights into climate and usage patterns on the canal.
 # --------------------------------------------------------------------------
 ## <ins>2. System Architecture:</ins>
-<div align="center">
+<!--<div align="center">
   <img src="https://github.com/user-attachments/assets/b45c0972-9577-4a81-914e-2cd3c1078917" alt="image" />
-</div>
+</div> -->
+<!-- This is a private note to myself. It won't appear on the GitHub page. -->
 
 # --------------------------------------------------------------------------
 ## <ins>3. Implementation for the Rideau Canal Skateway Monitoring System using Azure services:</ins>
+<ins>3.1 IoT Sensor Simulation</ins>
+
