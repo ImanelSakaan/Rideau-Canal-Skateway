@@ -95,6 +95,11 @@ if __name__ == "__main__":
     main()
 ```
 ### 3.2 Azure IoT Hub Configuration:
+Azure IoT Hub allows secure, bi-directional communication between your IoT devices and the cloud. It supports:
+Device authentication (via unique keys or certificates)
+Message encryption
+Access control
+
 ✅ Setup Steps
 1. 	Create a Resource Group.
 2.	Create an IoT Hub via Azure Portal.
@@ -102,7 +107,7 @@ if __name__ == "__main__":
 4.	Copy the connection string for device-to-cloud communication.
 5.	Route incoming messages to Azure Stream Analytics.
 ![image](https://github.com/user-attachments/assets/4618a8e5-918e-4593-b066-92a033813ec1)
-_Primary connection string Example_
+**_Primary connection string Example: _**
 HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJkxW4a/zE3O4GsqAOHKJZefitzJnEoiwv1agtU=
 
 ### 3.3 Azure Stream Analytics Job:
