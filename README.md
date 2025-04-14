@@ -107,8 +107,9 @@ Azure IoT Hub allows secure, bi-directional communication between your IoT devic
 4.	Copy the connection string for device-to-cloud communication.
 5.	Route incoming messages to Azure Stream Analytics.
 ![image](https://github.com/user-attachments/assets/4618a8e5-918e-4593-b066-92a033813ec1)
-**_Primary connection string Example: _**
-HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJkxW4a/zE3O4GsqAOHKJZefitzJnEoiwv1agtU=
+
+**Primary connection string example:**  
+`HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJkxW4a/zE3O4GsqAOHKJZefitzJnEoiwv1agtU=`
 
 **Endpoints**
 •	Input: Device-to-cloud messages
