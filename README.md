@@ -122,6 +122,28 @@ Azure Stream Analytics (ASA) is a real-time data processing engine. It allows yo
     •	Filters unsafe conditions (e.g., ice too thin or temp too warm)
     •	Aggregates or enriches data if needed
 - **Sample Query**
+
+### 3.3 Azure Stream Analytics Job
+
+Azure Stream Analytics (ASA) is a real-time data processing engine. It allows you to:
+
+1. Ingest streaming data (e.g., IoT sensor data)  
+2. Filter, transform, and aggregate the data  
+3. Route the results to various outputs (dashboards, databases, alerts, etc.)
+
+#### **Input Source**
+- **Source type:** IoT Hub  
+- **Format:** JSON
+
+#### **Query Logic**
+- Filters unsafe conditions (e.g., ice too thin or temperature too warm)  
+- Aggregates or enriches data if needed
+
+#### **Sample Query**
+```sql
+-- Your query goes here
+
+
 ```python
    SELECT
     IoTHub.ConnectionDeviceId AS DeviceId,
