@@ -96,9 +96,9 @@ if __name__ == "__main__":
 ```
 ### 3.2 Azure IoT Hub Configuration:
 Azure IoT Hub allows secure, bi-directional communication between your IoT devices and the cloud. It supports:
-Device authentication (via unique keys or certificates)
-Message encryption
-Access control
+1. Device authentication (via unique keys or certificates)
+2. Message encryption
+3. Access control
 
 ✅ Setup Steps
 1. 	Create a Resource Group.
@@ -111,5 +111,29 @@ Access control
 HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJkxW4a/zE3O4GsqAOHKJZefitzJnEoiwv1agtU=
 
 ### 3.3 Azure Stream Analytics Job:
+Azure Stream Analytics (ASA) is a real-time data processing engine. It allows you to:
+1. Ingest streaming data (like IoT sensor data)
+2. Filter, transform, and aggregate it
+3. Route the results to various outputs (dashboards, databases, alerts, etc.)
+**_Input Source _**
+•	Source type: IoT Hub
+•	Format: JSON
+**_Query Logic _**
+•	Filters unsafe conditions (e.g., ice too thin or temp too warm)
+•	Aggregates or enriches data if needed
+**_ Sample Query _**
+```python
+   SELECT
+    IoTHub.ConnectionDeviceId AS DeviceId,
+    AVG(temperature) AS AvgTemperature,
+    AVG(humidity) AS AvgHumidity,
+    System.Timestamp AS EventTime
+INTO
+    [output]
+FROM
+    [input]
+GROUP BY
+    IoTHub.ConnectionDeviceId, TumblingWindow(second, 60)
+```
 
 ### 3.4 o	Azure Blob Storage:
