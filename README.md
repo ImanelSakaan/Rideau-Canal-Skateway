@@ -110,23 +110,12 @@ Azure IoT Hub allows secure, bi-directional communication between your IoT devic
 **_Primary connection string Example: _**
 HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJkxW4a/zE3O4GsqAOHKJZefitzJnEoiwv1agtU=
 
-### 3.3 Azure Stream Analytics Job:
+**Endpoints**
+•	Input: Device-to-cloud messages
+•	Output: Stream Analytics or Azure Blob Storage (optional fallback)
+
+#### 3.3 Azure Stream Analytics Job
 Azure Stream Analytics (ASA) is a real-time data processing engine. It allows you to:
-1. Ingest streaming data (like IoT sensor data)
-2. Filter, transform, and aggregate it
-3. Route the results to various outputs (dashboards, databases, alerts, etc.).   
-- **Input Source**
-    •	Source type: IoT Hub
-    •	Format: JSON
-- **_Query Logic** 
-    •	Filters unsafe conditions (e.g., ice too thin or temp too warm)
-    •	Aggregates or enriches data if needed
-- **Sample Query**
-
-### 3.3 Azure Stream Analytics Job
-
-Azure Stream Analytics (ASA) is a real-time data processing engine. It allows you to:
-
 1. Ingest streaming data (e.g., IoT sensor data)  
 2. Filter, transform, and aggregate the data  
 3. Route the results to various outputs (dashboards, databases, alerts, etc.)
@@ -140,10 +129,6 @@ Azure Stream Analytics (ASA) is a real-time data processing engine. It allows yo
 - Aggregates or enriches data if needed
 
 #### **Sample Query**
-```sql
--- Your query goes here
-
-
 ```python
    SELECT
     IoTHub.ConnectionDeviceId AS DeviceId,
@@ -157,5 +142,20 @@ FROM
 GROUP BY
     IoTHub.ConnectionDeviceId, TumblingWindow(second, 60)
 ```
+![image](https://github.com/user-attachments/assets/aa66a60e-8319-49e1-9e72-e29b33703f9a)
 
-### 3.4 o	Azure Blob Storage:
+**Output Destinations**
+•	Output: Azure Blob Storage
+•	Optional: Azure Table Storage or Power BI for dashboards
+
+### 3.4 Azure Blob Storage
+Data is typically stored in containers based on:
+- `year/month/day/hour/`  
+- **Example path:** `container/2025/04/13/10/sensor-001.json`
+#### **File Naming Convention**
+- Named by sensor and timestamp  
+- **Example:** `sensor-001_20250413T103000Z.json`
+#### **File Format**
+- Default format: JSON
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/055e6539-e107-4a50-b80a-d24f7492e9ab" />
+
