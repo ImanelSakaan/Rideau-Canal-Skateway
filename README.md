@@ -170,16 +170,18 @@ Data is typically stored in containers based on:
    ```bash
    git clone [https://github.com/ImanelSakaan/Rideau-Canal-Skateway.git]
 2.  Navigate to the simulation directory in Visual Code:
-   cd your-repo-name/IOTSimuation
-3.  Instal azure-iot-device
+   Rideau-Canal-Skateway/IOTSimulation
+3.  Install the Azure IoT Device SDK:
 ![image](https://github.com/user-attachments/assets/d9032cb3-530b-4516-87b8-72398fda3e45)
 
-4.  Run in Visual Code
+4.  Run the following command in Visual Studio Code terminal:
   python -m pip install azure-iot-device
 ![image](https://github.com/user-attachments/assets/4457fcf5-d15a-43ee-81e3-5c92de51f3e9)
 
-6.  Run Python sensor1.py
-7.  Run python sensor2.py
+6.  Run sensor1.py:
+   python sensor1.py
+7.  Run sensor2.py:
+   python sensor2.py
   ![image](https://github.com/user-attachments/assets/73574e9d-9015-4f0f-a217-4fcc57f61c5a)
 
 9.  
