@@ -162,4 +162,11 @@ Data is typically stored in containers based on:
 #### **File Format**
 - Default format: JSON
 <img width="592" alt="image" src="https://github.com/user-attachments/assets/055e6539-e107-4a50-b80a-d24f7492e9ab" />
+
 # --------------------------------------------------------------------------
+## <ins>4. Usage Instructions:</ins>
+### Running the IoT Sensor Simulation
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   
