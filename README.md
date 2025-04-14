@@ -35,8 +35,14 @@ Benefits:
   <img src="https://github.com/user-attachments/assets/b45c0972-9577-4a81-914e-2cd3c1078917" alt="image" />
 </div> -->
 <!-- This is a private note to myself. It won't appear on the GitHub page. -->
-
+      
+   ![Architecture Diagram](https://github.com/user-attachments/assets/221c66a2-cad0-4d37-a9ca-83bb2e722460)
 # --------------------------------------------------------------------------
 ## <ins>3. Implementation for the Rideau Canal Skateway Monitoring System using Azure services:</ins>
-<ins>3.1 IoT Sensor Simulation</ins>
+## <ins>3.1 IoT Sensor Simulation:</ins>
 
+## <ins>3.2 Azure IoT Hub Configuration:</ins>
+
+## <ins>3.3 Azure Stream Analytics Job:</ins>
+
+## <ins>3.4 o	Azure Blob Storage:</ins>
