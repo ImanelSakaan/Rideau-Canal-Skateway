@@ -114,14 +114,14 @@ HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJ
 Azure Stream Analytics (ASA) is a real-time data processing engine. It allows you to:
 1. Ingest streaming data (like IoT sensor data)
 2. Filter, transform, and aggregate it
-3. Route the results to various outputs (dashboards, databases, alerts, etc.)
-**_Input Source _**
-•	Source type: IoT Hub
-•	Format: JSON
-**_Query Logic _**
-•	Filters unsafe conditions (e.g., ice too thin or temp too warm)
-•	Aggregates or enriches data if needed
-**_ Sample Query _**
+3. Route the results to various outputs (dashboards, databases, alerts, etc.).   
+- **Input Source**
+    •	Source type: IoT Hub
+    •	Format: JSON
+- **_Query Logic** 
+    •	Filters unsafe conditions (e.g., ice too thin or temp too warm)
+    •	Aggregates or enriches data if needed
+- **Sample Query**
 ```python
    SELECT
     IoTHub.ConnectionDeviceId AS DeviceId,
