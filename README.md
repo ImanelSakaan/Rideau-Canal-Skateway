@@ -95,6 +95,12 @@ if __name__ == "__main__":
     main()
 ```
 ### 3.2 Azure IoT Hub Configuration:
+✅ Setup Steps
+1. 	Create a Resource Group.
+2.	Create an IoT Hub via Azure Portal.
+3.	Register a new IoT devices (real or simulated).
+4.	Copy the connection string for device-to-cloud communication.
+5.	Route incoming messages to Azure Stream Analytics.
 
 ### 3.3 Azure Stream Analytics Job:
 
