@@ -54,12 +54,12 @@ Example JSON payload:
 ```
 ### Data Generation
 The simulated sensor randomly generates values for:
-- ** location:## A fixed or selectable location (e.g., "Dow's Lake")
-- ** iceThickness: Ice thickness in centimeters
-- ** surfaceTemperature: Temperature at the surface of the ice (°C)
-- ** snowAccumulation: Depth of snow on top of the ice (cm)
-- ** externalTemperature: Air temperature above the ice (°C)
-- ** timestamp: ISO 8601 format datetime
+- **location:** A fixed or selectable location (e.g., "Dow's Lake")
+- **iceThickness:** Ice thickness in centimeters
+- **surfaceTemperature:** Temperature at the surface of the ice (°C)
+- **snowAccumulation:** Depth of snow on top of the ice (cm)
+- **externalTemperature:** Air temperature above the ice (°C)
+- **timestamp:** ISO 8601 format datetime
 
 Simulation Script Snippet (Python)
 ```python
