@@ -9,26 +9,29 @@ The core problem is the lack of continuous, real-time monitoring of the ice and 
 -	Skaters being exposed to thin or weak ice,
 -	Delays in responding to deteriorating weather that affects ice safety,
 -	Inefficient or delayed decision-making regarding closures or maintenance.
-
-## Proposed Solution:
+## Proposed Solution
 To address this, a real-time data streaming system is implemented with the following components:
-1.	Simulated IoT Sensors: These mimic real devices placed along the canal to monitor critical factors such as:
-o	Ice thickness
-o	Surface temperature
-o	Ambient temperature
-o	Humidity
-o	Wind speed and precipitation
-2.	Real-Time Data Processing: As data streams in, it's analyzed instantly to identify:
-o	Dangerous ice conditions (e.g., thin ice or rapidly warming temperatures)
-o	Weather patterns that could lead to unsafe skating conditions
-3.	Data Storage in Azure Blob Storage: All processed data is stored securely for:
-o	Historical analysis
-o	Reporting and visualization
-o	Training predictive models in the future
-Benefits:
-•	Enhanced public safety through timely alerts and preventive action.
-•	Data-driven decision-making for NCC officials.
-•	Long-term insights into climate and usage patterns on the canal.
+1. **Simulated IoT Sensors**  
+   These mimic real devices placed along the canal to monitor critical factors such as:  
+   - Ice thickness  
+   - Surface temperature  
+   - Ambient temperature  
+   - Humidity  
+   - Wind speed and precipitation
+2. **Real-Time Data Processing**  
+   As data streams in, it's analyzed instantly to identify:  
+   - Dangerous ice conditions (e.g., thin ice or rapidly warming temperatures)  
+   - Weather patterns that could lead to unsafe skating conditions
+3. **Data Storage in Azure Blob Storage**  
+   All processed data is stored securely for:  
+   - Historical analysis  
+   - Reporting and visualization  
+   - Training predictive models in the future
+### Benefits
+- Enhanced public safety through timely alerts and preventive action  
+- Data-driven decision-making for NCC officials  
+- Long-term insights into climate and usage patterns on the canal
+
 # --------------------------------------------------------------------------
 ## <ins>2. System Architecture:</ins>
 <!--<div align="center">
@@ -111,11 +114,11 @@ Azure IoT Hub allows secure, bi-directional communication between your IoT devic
 **Primary connection string example:**  
 `HostName=IOThubcst8916.azure-devices.net;DeviceId=sensor1;SharedAccessKey=MdetcJkxW4a/zE3O4GsqAOHKJZefitzJnEoiwv1agtU=`
 
-**Endpoints**
-•	Input: Device-to-cloud messages
-•	Output: Stream Analytics or Azure Blob Storage (optional fallback)
+### Endpoints
+- **Input:** Device-to-cloud messages  
+- **Output:** Stream Analytics or Azure Blob Storage (optional fallback)
 
-#### 3.3 Azure Stream Analytics Job
+### 3.3 Azure Stream Analytics Job
 Azure Stream Analytics (ASA) is a real-time data processing engine. It allows you to:
 1. Ingest streaming data (e.g., IoT sensor data)  
 2. Filter, transform, and aggregate the data  
@@ -159,4 +162,4 @@ Data is typically stored in containers based on:
 #### **File Format**
 - Default format: JSON
 <img width="592" alt="image" src="https://github.com/user-attachments/assets/055e6539-e107-4a50-b80a-d24f7492e9ab" />
-
+# --------------------------------------------------------------------------
