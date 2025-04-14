@@ -1,14 +1,14 @@
 # Rideau-Canal-Skateway
 Real-time monitoring system for Rideau Canal Skateway using Azure IoT.
 
-## <ins>1. Overview of the Rideau Canal Skateway Monitoring Scenario</ins>
+## <ins>1. Overview of the Rideau Canal Skateway Monitoring Scenario:</ins>
 The Rideau Canal Skateway in Ottawa is the world’s largest naturally frozen skating rink and a popular winter destination for locals and tourists alike. Ensuring the safety of skaters is a top priority for the National Capital Commission (NCC), especially given the variable and sometimes unpredictable nature of ice and weather conditions. To maintain safety, there’s a need for a reliable and real-time monitoring system that can track environmental conditions and detect hazards before they pose risks to the public.
 
 ## Problem Addressed by the Solution:
 The core problem is the lack of continuous, real-time monitoring of the ice and weather conditions across the length of the canal. Without this, there’s a risk of:
-•	Skaters being exposed to thin or weak ice,
-•	Delays in responding to deteriorating weather that affects ice safety,
-•	Inefficient or delayed decision-making regarding closures or maintenance.
+-	Skaters being exposed to thin or weak ice,
+-	Delays in responding to deteriorating weather that affects ice safety,
+-	Inefficient or delayed decision-making regarding closures or maintenance.
 
 ## Proposed Solution:
 To address this, a real-time data streaming system is implemented with the following components:
@@ -29,8 +29,9 @@ Benefits:
 •	Enhanced public safety through timely alerts and preventive action.
 •	Data-driven decision-making for NCC officials.
 •	Long-term insights into climate and usage patterns on the canal.
-Let me know if you’d like a sample architecture diagram or code for simulating the IoT sensors!
-
 # --------------------------------------------------------------------------
+## <ins>2. System Architecture:</ins>
+
+![image](https://github.com/user-attachments/assets/b45c0972-9577-4a81-914e-2cd3c1078917)
 
 
