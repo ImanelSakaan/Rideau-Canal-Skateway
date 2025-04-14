@@ -34,4 +34,3 @@ Benefits:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b45c0972-9577-4a81-914e-2cd3c1078917" alt="image" />
 </div>
-
