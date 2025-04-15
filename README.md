@@ -193,5 +193,34 @@ Prerequisites:
   ![image](https://github.com/user-attachments/assets/73574e9d-9015-4f0f-a217-4fcc57f61c5a)
 8.	Check output: The script sends telemetry data every 10 seconds to Azure IoT Hub.
 
+### Configuring Azure Services:
+### A. Azure IoT Hub Setup
+#### 1. Create IoT Hub
+- Go to **Azure Portal** > **Create a Resource** > **IoT Hub**  
+- Select a pricing tier (**Free** is sufficient for testing purposes)  
+- Create the hub and wait for the deployment to complete
+![image](https://github.com/user-attachments/assets/3cfc501e-bee0-4304-8028-9e3e5ce0be07)
 
+#### 2. Add a Device
+- Go to your **IoT Hub** > **Devices** > **Add Device**  
+- Set a **Device ID** (e.g., `sensor-001`), then click **Create**  
+- Copy the **Primary Connection String** — you'll need it in your Python script
+<img width="846" alt="image" src="https://github.com/user-attachments/assets/8a0f52a1-6d58-4ba6-8593-523510319106" />
+
+### B. Stream Analytics Job Setup
+#### 1. Create a Stream Analytics Job
+- Go to **Azure Portal** > **Create a Resource** > **Stream Analytics Job**  
+- Give it a name, select the region, and choose a resource group
+#### 2. Add Input
+- In your job, go to **Inputs** > **Add Stream Input** > **IoT Hub**  
+- Link your existing **IoT Hub** as the input source
+#### 3. Add Output
+- Go to **Outputs** > **Add** > **Blob Storage**  
+- Select or create a **Blob Storage account** and **container**  
+#### 4. Define Query
+- Go to the **Query** tab  
+- Paste the processing query (see example in previous section)
+#### 5. Start the Job
+- Once input, output, and query are configured, click **Start** > **Now**
+![image](https://github.com/user-attachments/assets/dc1ae743-913f-48de-88ef-4a0c0a32d0da)
 
