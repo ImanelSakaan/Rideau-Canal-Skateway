@@ -224,3 +224,13 @@ Prerequisites:
 - Once input, output, and query are configured, click **Start** > **Now**
 ![image](https://github.com/user-attachments/assets/dc1ae743-913f-48de-88ef-4a0c0a32d0da)
 
+### Accessing Stored Data:
+### Steps to View Processed Data
+1. Go to **Azure Portal** > **Storage Accounts**  
+2. Select your **Blob Storage** account  
+3. Under **Data Storage**, click **Containers**  
+4. Open the container used in your **Stream Analytics** output  
+5. Click any file (e.g., `sensor-001_20250413T103000Z.json`) to view or download
+
+
+
