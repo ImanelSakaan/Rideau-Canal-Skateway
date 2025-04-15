@@ -260,6 +260,15 @@ Processed results are stored as **JSON files** in **Azure Blob Storage**, organi
 
 **Sample Output File:**  
 `sensor-001_20250413T100000Z.json`
+# --------------------------------------------------------------------------
+## <ins>6. Reflection:</ins>
+### Simulating Realistic IoT Sensor Data
+**Challenge:**  
+Creating believable, variable, and timestamped sensor data that reflects real-world weather and ice conditions was complex — especially ensuring logical correlations (e.g., warmer air temperature = thinner ice).
 
+**Solution:**  
+- Developed a Python script using the `random` and `datetime` libraries to simulate values with natural variability  
+- Introduced logic to mimic weather patterns (e.g., rising temperatures during the day, falling at night)  
+- Applied **Gaussian noise** to make the data feel more realistic and dynamic
 
 
