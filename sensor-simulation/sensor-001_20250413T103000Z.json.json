@@ -1,0 +1,42 @@
+[
+    {
+        "location": "Dow's Lake",
+        "iceThickness": 34,
+        "surfaceTemperature": -2,
+        "snowAccumulation": 5,
+        "externalTemperature": -5,
+        "timestamp": "2025-04-14T12:00:00Z"
+    },
+    {
+        "location": "Dow's Lake",
+        "iceThickness": 27,
+        "surfaceTemperature": -2,
+        "snowAccumulation": 5,
+        "externalTemperature": -2,
+        "timestamp": "2025-04-14T12:10:00Z"
+    },
+    {
+        "location": "Dow's Lake",
+        "iceThickness": 28,
+        "surfaceTemperature": -1,
+        "snowAccumulation": 7,
+        "externalTemperature": -2,
+        "timestamp": "2025-04-14T12:20:00Z"
+    },
+    {
+        "location": "Dow's Lake",
+        "iceThickness": 34,
+        "surfaceTemperature": -2,
+        "snowAccumulation": 5,
+        "externalTemperature": -4,
+        "timestamp": "2025-04-14T12:30:00Z"
+    },
+    {
+        "location": "Dow's Lake",
+        "iceThickness": 34,
+        "surfaceTemperature": -3,
+        "snowAccumulation": 5,
+        "externalTemperature": -4,
+        "timestamp": "2025-04-14T12:40:00Z"
+    }
+]
