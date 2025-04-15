@@ -232,5 +232,34 @@ Prerequisites:
 4. Open the container used in your **Stream Analytics** output  
 5. Click any file (e.g., `sensor-001_20250413T103000Z.json`) to view or download
 
+# --------------------------------------------------------------------------
+## <ins>5. Results:</ins>
+After collecting and processing data through the IoT sensor simulation and Stream Analytics job, several valuable insights and aggregated outputs can be derived from the stored data in **Azure Blob Storage**
+### Aggregated Data Outputs
+These are some examples of the metrics that can be calculated from the processed dataset stored in **Azure Blob Storage**:
+ **Average Ice Thickness**  
+- **Query Result Example:**  
+  "The average ice thickness across all sensors from 6 AM to 12 PM on April 13, 2025 was 31.2 cm."  
+- **Significance:**  
+  Anything below **30 cm** is flagged as a safety concern based on NCC guidelines.
+
+ **Unsafe Condition Detection Summary**  
+- Over a 12-hour period, **18 unsafe events** were detected:
+  - 10 due to **thin ice** (<30 cm)  
+  - 8 due to **surface temperature** rising above 0°C
+
+ **Environmental Conditions Trend**  
+- **Humidity** and **wind speeds** were generally stable  
+- Notable spikes in wind speed (above 20 km/h) corresponded with increased **melting rates** on surface ice in certain segments
+
+### Sample Output Files in Blob Storage
+Processed results are stored as **JSON files** in **Azure Blob Storage**, organized by date and time.
+
+🗂 **Folder Structure**
+/skateway-processed-data/ └── 2025/ └── 04/ └── 13/ └── 10/ ├── sensor-001_20250413T100000Z.json ├── sensor-002_20250413T100000Z.json
+
+**Sample Output File:**  
+`sensor-001_20250413T100000Z.json`
+
 
 
