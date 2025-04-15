@@ -166,6 +166,12 @@ Data is typically stored in containers based on:
 # --------------------------------------------------------------------------
 ## <ins>4. Usage Instructions:</ins>
 ### Running the IoT Sensor Simulation
+Prerequisites:
+•	Python 3.13.3
+•	Azure IoT Device SDK:
+•	pip install azure-iot-device
+•	Your IoT Hub device connection string
+
 1. Clone the repository to your local machine:
    ```bash
    git clone [https://github.com/ImanelSakaan/Rideau-Canal-Skateway.git]
@@ -178,10 +184,14 @@ Data is typically stored in containers based on:
   python -m pip install azure-iot-device
 ![image](https://github.com/user-attachments/assets/4457fcf5-d15a-43ee-81e3-5c92de51f3e9)
 
+5. Replace connection string: In the script:
+   connection_string = "<Your IoT Device Connection String>"
 6.  Run sensor1.py:
    python sensor1.py
 7.  Run sensor2.py:
    python sensor2.py
   ![image](https://github.com/user-attachments/assets/73574e9d-9015-4f0f-a217-4fcc57f61c5a)
+8.	Check output: The script sends telemetry data every 10 seconds to Azure IoT Hub.
 
-9.  
+
+
